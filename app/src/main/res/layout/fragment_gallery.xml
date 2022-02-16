@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <!-- Pantalla 4: vertical -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_enabled"
+        tools:context=".fragments.GalleryFragment">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scrollview_vertical"
+            android:background="@color/dark_purple"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--Imágenes extraídas de SoundCloud y Deezer-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/images_vertical"
+                    android:src="@drawable/album1" />
+
+                <ImageView
+                    style="@style/images_vertical"
+                    android:src="@drawable/album2" />
+
+                <ImageView
+                    style="@style/images_vertical"
+                    android:src="@drawable/album3" />
+
+                <ImageView
+                    style="@style/images_vertical"
+                    android:src="@drawable/album4" />
+
+                <ImageView
+                    style="@style/images_vertical"
+                    android:src="@drawable/album5" />
+
+                <ImageView
+                    style="@style/images_vertical"
+                    android:src="@drawable/album6" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_music_player"
+            style="@style/button_text"
+            android:text="@string/volver_al_reproductor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollview"
+            app:layout_constraintVertical_bias="0.949"
+            app:rippleColor="@color/turquoise"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/dp_6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

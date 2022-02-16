@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <!-- Pantalla 2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_enabled"
+        tools:context=".fragments.DataBaseFragment">
+
+        <Button
+            android:id="@+id/button_delete_table"
+            style="@style/button_text"
+            android:text="@string/borrar_tabla"
+            app:backgroundTint="@color/light_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.344"
+            app:rippleColor="@color/turquoise"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/dp_6" />
+
+        <Button
+            android:id="@+id/button_insert_data"
+            style="@style/button_text"
+            android:text="@string/insertar_datos"
+            app:backgroundTint="@color/light_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_delete_table"
+            app:layout_constraintVertical_bias="0.082"
+            app:rippleColor="@color/turquoise"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/dp_6" />
+
+        <Button
+            android:id="@+id/button_view_data"
+            style="@style/button_text"
+            android:layout_marginBottom="164dp"
+            android:text="@string/consultar_datos"
+            app:backgroundTint="@color/light_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_insert_data"
+            app:layout_constraintVertical_bias="0.256"
+            app:rippleColor="@color/turquoise"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/dp_6" />
+
+        <Button
+            android:id="@+id/button_music_player"
+            style="@style/button_text"
+            android:text="@string/volver_al_reproductor"
+            app:backgroundTint="@color/dark_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_view_data"
+            app:layout_constraintVertical_bias="0.72"
+            app:rippleColor="@color/turquoise"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <!-- Pantalla 3 -->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_focused"
+        tools:context=".fragments.GalleryFragment">
+
+        <ImageButton
+            android:id="@+id/camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:padding="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_camera_alt_100" />
+
+        <Button
+            android:id="@+id/button_music_player"
+            style="@style/button_text"
+            android:text="@string/volver_al_reproductor"
+            app:backgroundTint="@color/light_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/camera_btn"
+            app:layout_constraintVertical_bias="0.72"
+            app:rippleColor="@color/turquoise"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/dp_6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

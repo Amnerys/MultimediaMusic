@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/dataBaseFragment"
+        android:name="com.example.pac_uf2_ferrermonica.fragments.DataBaseFragment"
+        android:label="fragment_data_base"
+        tools:layout="@layout/fragment_data_base" >
+        <action
+            android:id="@+id/action_dataBaseFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_dataBaseFragment_to_consultaFragment"
+            app:destination="@id/consultaFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.pac_uf2_ferrermonica.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.pac_uf2_ferrermonica.fragments.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.pac_uf2_ferrermonica.fragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_cameraFragment_to_insertarFragment"
+            app:destination="@id/insertarFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/consultaFragment"
+        android:name="com.example.pac_uf2_ferrermonica.fragments.ConsultaFragment"
+        android:label="ConsultaFragment" />
+    <action android:id="@+id/action_consulta_fragment_to_databaseFragment"
+        app:destination="@+id/dataBaseFragment"/>
+
+    <fragment
+        android:id="@+id/insertarFragment"
+        android:name="com.example.pac_uf2_ferrermonica.fragments.InsertarFragment"
+        android:label="InsertarFragment" />
+    <action android:id="@+id/action_insertar_fragment_to_databaseFragment"
+        app:destination="@+id/dataBaseFragment"/>
+
+</navigation>

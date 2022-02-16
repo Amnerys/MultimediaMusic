@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PAC_UF2_FerrerMonica</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_consultar_musica">ConsultarMusicaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_insertar_musica">InsertarMusicaActivity</string>
+    <string name="volver_al_reproductor">Volver al reproductor</string>
+    <string name="artist">Artista</string>
+    <string name="song">Canción</string>
+    <string name="album">Album</string>
+    <string name="ir_a_pantalla_2_bbdd">Ir a pantalla 2: BBDD</string>
+    <string name="ir_a_pantalla_3_camara">Ir a pantalla 3: cámara</string>
+    <string name="ir_a_pantalla_4_galeria">Ir a pantalla 4: galería</string>
+    <string name="tabla_nombre">Tabla Música</string>
+    <string name="consultar_datos">Consultar datos</string>
+    <string name="insertar_datos">Insertar datos</string>
+    <string name="borrar_tabla">Borrar tabla</string>
+    <string name="add_song">Añadir canción</string>
+    <string name="insertar_btn">Insertar</string>
+    <string name="volver_btn">volver</string>
+</resources>
